@@ -1,0 +1,371 @@
+body  {
+  background-color: #DFDFE4;
+  color: #2D343A;
+  font-family: arial;
+  line-height: 75%;
+  font-size: .75rem;
+}
+
+nav  {
+  background-color: #2D343A;
+  width: 100vw;
+  height: 10vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.nav-links  {
+  color: white;
+  display: inline;
+  text-decoration: none;
+  font-size: 1.5vw;
+  position: absolute;
+  outline: none;
+}
+
+.nav-icons  {
+  filter: invert(80%);
+  height: 1.25vw;
+  margin-right: .75rem;
+  outline: none;
+}
+
+.right  {
+  right: 1vw;
+  top: 1vw;
+  outline: none;
+}
+
+.arrow  {
+  width: .9vw;
+  height: 1vw;
+}
+
+.left  {
+  top: 7vw;
+  display: inline;
+  position: relative;
+  margin-left: 3vw;
+  outline: none;
+}
+
+.top-image  {
+  width: 6vw;
+  position: absolute;
+  outline: none;
+  right: 4vw;
+  top: 2.75vw;
+}
+
+.main  {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 98vw;
+}
+
+h1  {
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-top: 13vw;
+  margin-left: 4.5vw;
+}
+
+/*card elements*/
+.card  {
+  background-color: white;
+  height: 30vw;
+  margin: 1.5vw;
+  width: 20vw;
+  box-shadow: 1px 2px 3px 1px #BABABA;
+  z-index: 1;
+}
+
+.card-info  {
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  height: 16vw;
+  position: relative;
+  width: 19vw;
+}
+
+.card-header  {
+  color: #454545;
+  line-height: .65vw;
+  font-size: 1.3vw;
+}
+
+.date  {
+  color: grey;
+  line-height: .45vw;
+}
+
+.link  {
+  background-color: #DFDFE4;
+  color: #2D343A;
+  font-size: .9vw;
+  margin: .5vw;
+  padding: .75vw;
+}
+
+.playlist  {
+  line-height: .40vw;
+}
+
+.attachments  {
+  font-weight: 700;
+  line-height: .4vw;
+}
+
+.card-number  {
+  color: #3db4ff;
+  font-size: 2.5vw;
+  font-weight: 300;
+  line-height: .5vw;
+}
+
+.profile  {
+  width: 100%;
+}
+
+.circle-button  {
+  border: 0px;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url(images/arrows.png), radial-gradient(#2D343A, #2D343A, transparent, transparent);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center center;
+  outline: none;
+  position: absolute;
+}
+
+.view-space  {
+  border: none;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin-left: 15vw;
+  background: linear-gradient(#2D343A, transparent);
+}
+
+.views  {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: .1vw;
+}
+
+.view-count  {
+  font-size: 2.5vw;
+  font-weight: 300;
+  line-height: .1vw;
+}
+
+/*hover states*/
+.nav-links:hover  {
+  color: #d5d9e0;
+}
+
+.arrow:hover  {
+  filter: invert(20%);
+}
+
+.top-image:hover  {
+  opacity: .8;
+}
+
+.card:hover  {
+  box-shadow: 2px 3px 4px 2px grey;
+}
+
+.link:hover  {
+  font-size: .95vw;
+}
+
+.circle-button:hover  {
+  background-size: 53px;
+}
+
+.view-space:hover  {
+  color: #d5d9e0;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 801px)  {
+
+  nav  {
+    height: 15vw;
+  }
+
+  h1  {
+    font-size: 3vw;
+    font-weight: 700;
+    margin-top: 20vw;
+    text-align: center;
+  }
+
+  .main  {
+    font-size: .65rem;
+  }
+
+  .card  {
+    display: flex;
+    flex-wrap: wrap;
+    height: 38vw;
+    margin-bottom: 5vw;
+    width: 26vw;
+  }
+
+  .profile  {
+    width: 26vw;
+    height: 17vw;
+  }
+
+  .left  {
+    font-size: 2.5vw;
+    margin: 2vw;
+    top: 10vw;
+  }
+
+  .right  {
+    font-size: 2.5vw;
+  }
+
+  .nav-icons  {
+    height: 2.25vw;
+  }
+
+  .top-image  {
+    top: 5vw;
+  }
+
+  .view-space  {
+    margin-left: 19vw;
+  }
+
+}
+
+@media only screen and (max-width: 800px)  {
+
+  nav  {
+    height: 30vw;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+  }
+
+  h1  {
+    margin-top: 35vw;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  .top-image  {
+    width: 20vw;
+    right: 12vw;
+  }
+
+  .top-image:hover  {
+    width: 21vw;
+  }
+
+  .card  {
+    height: 60vw;
+    width: 45vw;
+    font-size: 2vw;
+  }
+
+  .card-header  {
+    font-size: 2.5vw;
+    margin-top: 12vw;
+  }
+
+  .link  {
+    font-size: 2vw;
+  }
+
+  .profile  {
+    height: 30vw;
+    width: 45vw;
+    margin-bottom: -10vw;
+  }
+
+  .nav-links  {
+  font-size: 3.5vw;
+  }
+
+  .card-number  {
+    font-size: 4vw;
+  }
+
+  .nav-icons  {
+    height: 3.5vw;
+  }
+
+  .left  {
+    display: block;
+    margin-bottom: 3vw;
+  }
+
+  .right  {
+    left: 1vw;
+    display: block;
+    margin-bottom: 3vw;
+    margin-left: 2vw;
+  }
+
+  .view-space  {
+    margin-left: 33vw;
+  }
+
+  .views  {
+    font-size: 3vw;
+  }
+
+  .view-count  {
+    font-size: 5vw
+  }
+
+  .circle-button  {
+    background-size: 9vw;
+    height: 9vw;
+    width: 9vw;
+  }
+
+  .circle-button:hover  {
+    background-size: 10vw;
+    height: 10vw;
+    width: 10vw;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
